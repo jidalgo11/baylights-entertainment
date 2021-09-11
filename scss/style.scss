@@ -1,0 +1,152 @@
+@import 'fonts';
+@import 'reset';
+
+$primary: #e94339;
+$secondary: #fdcc1a;
+$tertiary: #f07c3d;
+$accent: #f6a32d;
+$white: #fff;
+$offwhite: #eee;
+$grey: #6d6e70;
+$black: #111;
+
+body {
+  font-family: 'lemonmilk', sans-serif;
+  font-size: 14px;
+  color: $black;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+p {
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  width: 95%;
+  max-width: 1400px;
+  position: relative;
+  height: inherit;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 15px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 100px;
+  }
+  nav {
+    ul {
+      display: flex;
+      li {
+        margin-left: 25px;
+      }
+    }
+  }
+}
+
+.hero {
+  background: url('../images/hero2.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  padding-top: 20%;
+  padding-bottom: 15%;
+  position: relative;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($black, .65);
+    z-index: 0;
+  }
+}
+
+section {
+  padding: 35px 0;
+
+}
+
+.services {
+  background: url('../images/hero4.jpg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: $white;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($black, .65);
+    z-index: 0;
+    filter: blur(5px);
+  }
+}
+
+.demo-reel {
+  .reels {
+    iframe {
+      display: block;
+      width: 75%;
+      height: 500px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.contact {
+  background: $tertiary;
+  color: $white;
+}
+
+footer {
+  background: $tertiary;
+  text-align: center;
+  padding: 15px 0;
+  color: $white;
+  p {
+    font-size: .9em;
+  }
+}
