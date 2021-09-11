@@ -60,14 +60,24 @@ header {
   left: 0;
   width: 100%;
   z-index: 1;
-  padding: 15px 0;
+  background: transparent;
+  transition: .25s background ease-in-out;
+  padding: 10px 0;
+  &.sticky {
+    background: $black;
+    .logo {
+      transform: scale3d(.75, .75, .75);
+    }
+  }
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .logo {
-    width: 100px;
+    width: 95px;
+    transform: scale3d(1, 1, 1);
+    transition: .25s transform ease-in-out;
   }
   nav {
     ul {
