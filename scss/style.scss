@@ -27,8 +27,8 @@ h1 {
 h2 {
   font-size: 2.25em;
   line-height: 2em;
-  color: $tertiary;
-  margin-bottom: 15px;
+  color: $primary;
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -62,6 +62,13 @@ section {
 
 .fb {
   justify-content: space-between;
+  align-items: center;
+}
+
+.line {
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(to right, $primary, $tertiary, $secondary);
 }
 
 .container {
@@ -129,36 +136,34 @@ header {
 }
 
 .about {
-  background: $offwhite;
+  background: $white;
   .left-content {
-    width: 50%;
+    width: 45%;
   }
   .right-content {
-    color: $primary;
-    font-size: 5em;
+    color: $offwhite;
     position: relative;
-    width: 35%;
-    i {
-      position: absolute;
-    }
-    i:nth-child(1) {
-      top: 0;
-    }
-    i:nth-child(2) {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: $accent;
-    }
-    i:nth-child(3) {
-      top: 0;
-      right: 0;
-    }
-    i:nth-child(4) {
-      bottom: 0;
-      left: 20%;
-      transform: translateX(-20%);
-      font-size: 3rem;
+    width: 45%;
+    background: linear-gradient(to right, $primary, $tertiary, $secondary);
+    padding: 50px 25px;
+    border-radius: 5px;
+    .item {
+      padding: 25px;
+      background: rgba($white, .25);
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-evenly;
+      width: 30%;
+      flex-direction: column;
+      text-align: center;
+      i {
+        font-size: 5em;
+      }
+      p {
+        font-size: 1.55rem;
+        margin-top: 10px;
+        color: $white;
+      }
     }
   }
 }
@@ -184,13 +189,16 @@ header {
   }
 }
 
-.demo-reel {
-  .reels {
-    iframe {
-      display: block;
-      width: 75%;
-      height: 500px;
-      margin: 0 auto;
+.demo {
+  background: $offwhite;
+  .demo-reel {
+    .reels {
+      iframe {
+        display: block;
+        width: 75%;
+        height: 500px;
+        margin: 0 auto;
+      }
     }
   }
 }
