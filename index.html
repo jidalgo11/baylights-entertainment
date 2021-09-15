@@ -5,20 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/65e2354d7f.js" crossorigin="anonymous"></script>
   <title>Baylights Entertainment</title>
 </head>
 <body>
   <header>
     <div class="container">
       <div class="logo">
-        <a href="#"><img src="images/logo.png" alt="Baylights Entertainment"></a>
+        <a id="top" href="#"><img src="images/logo.png" alt="Baylights Entertainment"></a>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Demos</a></li>
-          <li><a href="#">Link</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -30,19 +31,27 @@
       <h3>We Tell Incredible Stories</h3>
     </div>
   </div>
-  <section class="about">
-    <div class="container">
-      <h2>About Us</h2>
+  <section id="about" class="about">
+    <div class="container flex fb">
+      <div class="left-content">
+        <h2>About Us</h2>
       <p>Bay Lights Entertainment is a full-service creative, and video production company delivering innovative content, based in Los Angeles, California. We produce memorable experiences that touch, move and inspire our clients.</p>
+      </div>
+      <div class="right-content">
+        <i class="fas fa-video"></i>
+        <i class="fas fa-film"></i>
+        <i class="fas fa-photo-video"></i>
+        <i class="fas fa-camera"></i>
+      </div>
     </div>
   </section>
-  <section class="services">
+  <section id="services" class="services">
     <div class="overlay"></div>
     <div class="container">
       <h2>Our Services</h2>
     </div>
   </section>
-  <section>
+  <section id="demo" class="demo">
     <div class="demo-reel container">
       <h2>Demo Reel</h2>
       <p>Bay Lights Entertainment is a full-service creative, and video production company delivering innovative content, based in Los Angeles, California. We produce memorable experiences that touch, move and inspire our clients.</p>
@@ -51,7 +60,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="container">
       <h2>Our Studio</h2>
       <div class="info">
@@ -74,7 +83,7 @@
       <p>Baylights Entertainment<span style="font-size: 25px;">&copy;</span> 2021. Designed by <a href="http://www.daniel-hidalgo.com" target="_blank">DH</a></p>
     </div>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
