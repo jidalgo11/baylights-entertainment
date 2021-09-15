@@ -6,7 +6,7 @@ $secondary: #fdcc1a;
 $tertiary: #f07c3d;
 $accent: #f6a32d;
 $white: #fff;
-$offwhite: #eee;
+$offwhite: #f7f7f7;
 $grey: #6d6e70;
 $black: #111;
 
@@ -46,9 +46,14 @@ ul {
   list-style-type: none;
 }
 
+section {
+  padding: 55px 0;
+
+}
+
 .container {
-  width: 95%;
-  max-width: 1400px;
+  width: 1400px;
+  max-width: 95%;
   position: relative;
   height: inherit;
   margin: 0 auto;
@@ -61,12 +66,13 @@ header {
   width: 100%;
   z-index: 1;
   background: transparent;
+  height: 130px;
   transition: .25s background ease-in-out;
-  padding: 10px 0;
   &.sticky {
-    background: $black;
+    background: rgba($black, .925);
+    height: 100px;
     .logo {
-      transform: scale3d(.75, .75, .75);
+      transform: scale3d(.725, .725, .725);
     }
   }
   .container {
@@ -109,9 +115,8 @@ header {
   }
 }
 
-section {
-  padding: 35px 0;
-
+.about {
+  background: $offwhite;
 }
 
 .services {
