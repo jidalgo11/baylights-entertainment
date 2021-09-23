@@ -31,3 +31,11 @@ window.addEventListener('scroll', () => {
     header.classList.remove("sticky")
   }
 })
+
+window.addEventListener('DOMContentLoaded', () => {
+  if(window.scrollY > 100) {
+    header.classList.add("sticky")
+  } else {
+    header.classList.remove("sticky")
+  }
+})
